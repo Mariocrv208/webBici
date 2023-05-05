@@ -1,17 +1,18 @@
-import Table from 'react-bootstrap/Table';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function Video() 
-{  
-
+function VideoPlayer(props) {
   return (
-    //AQUI DEBE IR TODO CON RESPECTO A INFORMACION
-    <div style={{textAlign: 'center'}}>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/BICIO" frameborder="0" allowfullscreen></iframe>
-
-
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/${props.videoId}`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 }
 
-export default Video;
+export default VideoPlayer;

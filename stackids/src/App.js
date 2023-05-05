@@ -1,6 +1,6 @@
 import './App.css';
 import  Turnos from './components/Turnos';
-import Video from './components/Video';
+import VideoPlayer from './components/Video';
 
 function App() {
 
@@ -13,9 +13,10 @@ function App() {
         </div>
       </header>
       <body className="App-body">
-        <div>
+        <div style={{textAlign: "center"}}>
           <Turnos></Turnos>
-          <Video></Video>
+          <VideoPlayer videoId="HRyLBnIwk7Q" />
+
         </div>
       </body>
       <footer className="App-footer">
